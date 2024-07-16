@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>자기소개</title>
+            <meta charset="utf-8">
+            <style>
+                a {
+                    color: coral;
+                    text-decoration:overline;
+                }
+                .es{
+                    color: purple;
+                    text-decoration: none;
+                }
+                .ms{
+                    color: yellow;
+                    text-decoration: none;
+                }
+                .hs{
+                    color: green;
+                    text-decoration: underline;
+                }
+                .department{
+                    color: blue;
+                    text-decoration: none;
+                }
+                #ges {
+                    color: red;
+                }
+                h1 {
+                    text-align: center;
+                    border-width: 5px;
+                    border-color: red;
+                    border-style: solid;
+
+                    padding: 20px;
+                    margin: 20px;
+                }
+                h2 {
+                    text-align: center;
+                    border-width: 5px;
+                    border-color: black;
+                    border-style: solid;
+                }
+                div {
+                    border: 5px, solid, gray;
+                    display: grid;
+                    grid-template-columns: 100px 1fr;
+                }
+                #gri{
+                    border: 5px solid pink;
+                }
+                @media(max-width:500px){
+                    #gri{
+                    display: none;
+                    }
+                }
+            </style>
+            
+        </head>
+        <body>
+            <h1>안녕하세요</h1>
+            <h2>저에 대해 소개하겠습니다</h2>
+            <p>
+                이름 : <strong>이수연</strong>
+                <br>
+
+            </p>
+            <p>
+                <li><a class="es" id="ges">경명초등학교</a> 졸업</li>
+                <li><a class="ms">청람중학교</a> 졸업</li>
+                <li><a href="http://cheongra.icehs.kr/main.do" class="hs">인천청라고등학교</a> 재학</li>
+                <li><a href="https://cse.snu.ac.kr/" class="department">컴퓨터공학과</a> 지망</li>
+            </p>
+            <img src="logo.png">
+            <h3>프로젝트 경력</h3>
+            <div id="gri">
+                <div>을 소개하겠습니다</div>
+                <div>dsdsds</div>
+            </div>
+            <p>
+                <li>창의 융합 프로젝트 앱 만들기 담당</li>
+                <li>아두이노 캠프에서 도어락 제작</li>
+                <li>사물인터넷을 활용한 스마트홈 제작</li>
+                <li>해킹대응 정보보안 캠프 수강</li>
+                <li>아두이노를 활용한 뇌파 측정값으로 사물 제어 프로그램 제작</li>
+            </p>
+            <p>
+                
+            </p>
+
+            <input type="button" value="day" onclick="
+            if(document.querySelector('body').dataset.mode === 'night'){
+                document.querySelector('body').style.backgroundColor = 'white';
+                document.querySelector('body').style.color = 'black';
+                document.querySelector('body').dataset.mode = 'day';
+                this.value='day';
+            }
+            else{
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('body').style.color = 'white';
+                document.querySelector('body').dataset.mode = 'night';
+            }
+            ">
+        </body>
+</html>
+
